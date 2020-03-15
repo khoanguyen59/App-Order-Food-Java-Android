@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tandai.orderfood">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ForgotPassActivity"></activity>
+        <activity android:name=".QuanAnXemDSDonDatHang" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".FoodDetailActivity" />
+        <activity
+            android:name=".KhachHangActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".InfoPersonActivity" />
+        <activity android:name=".SearchFoodActivity" />
+        <activity android:name=".XemDSMonActivity" />
+        <activity android:name=".XoaMonActivity" />
+        <activity android:name=".SuaMonActivity" />
+        <activity android:name=".ThemMonActivity" />
+        <activity android:name=".ChangePassActivity" />
+        <activity android:name=".XoaQuanActivity" />
+        <activity android:name=".ThemQuanActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".QuanAnActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

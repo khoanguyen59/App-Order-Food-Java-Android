@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    android:background="@drawable/food3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="@string/dangky"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/nabila"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/txtEmail"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            android:drawableLeft="@drawable/mail1"
+            android:drawablePadding="@dimen/size10dp"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/txtPass"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFFFFF"
+            app:met_minCharacters="6"
+            app:met_singleLineEllipsis="true"
+            android:drawableLeft="@drawable/pass1"
+            android:drawablePadding="@dimen/size10dp"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/txtName"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            android:drawableLeft="@drawable/name1"
+            android:drawablePadding="@dimen/size10dp"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/txtPhone"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:inputType="phone"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            android:drawableLeft="@drawable/phone1"
+            android:drawablePadding="@dimen/size10dp"
+            app:met_maxCharacters="11"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"
+            android:textColorHint="#FAF8F8"
+            android:id="@+id/txtAddress"
+            android:textColor="#FFFCFC"
+            android:textSize="20sp"
+            android:inputType="text"
+            app:met_baseColor="#FFFFFF"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="#FFFFFF"
+            app:met_singleLineEllipsis="true"
+            android:drawableLeft="@drawable/address1"
+            android:drawablePadding="@dimen/size10dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/size10dp">
+
+            <Button
+                android:id="@+id/btnReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:background="@drawable/duongvien_xanh"
+                android:text="@string/dangky"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnThoatReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_weight="1"
+                android:text="Thoát"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:background="@drawable/duongvien_nau"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
